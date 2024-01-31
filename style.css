@@ -142,6 +142,11 @@ header .navbar ul li a:hover{
     background-color: #d7f308;
 }
 
+.link{
+    font-size: 2rem;
+    color: blue;
+}
+
 #menu{
     position: fixed;
     top:4rem; right:2rem;
