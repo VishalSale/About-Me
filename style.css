@@ -85,7 +85,7 @@ header{
     top:0; 
     left:0;
     z-index: 1000;
-    height: 100%;
+    height: auto;
     width:35rem;
     background: peru;
     display: flex;
@@ -97,8 +97,8 @@ header{
 }
 
 header .user img{
-    height:30rem;
-    width:30rem;
+    height:25rem;
+    width:25rem;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 1rem;
@@ -106,12 +106,12 @@ header .user img{
 }
 
 header .user .name{
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     color:#f5f5dc;
 }
 
 header .user .post{
-    font-size: 2rem;
+    font-size: 1.8rem;
     color:#f5f5dc;
 }
 
@@ -127,7 +127,6 @@ header .navbar ul{
 
 header .navbar ul li a{
     display: block;
-    padding:1rem;
     margin:1.5rem 0;
     background:#333;
     color:rgb(255, 255, 200);
@@ -136,10 +135,16 @@ header .navbar ul li a{
     border-top-right-radius: 10rem;
     border-bottom-left-radius: 10rem;
     border-bottom-right-radius: 10rem;
+	padding: 13px 30px;
+	border-bottom: 1px solid #10558d;
+	color: rgb(241, 237, 237);
+	font-size: 16px;
+	position: relative;
 }
 
 header .navbar ul li a:hover{
-    background-color: #d7f308;
+    background-color: #333;
+
 }
 
 .link{

@@ -26,3 +26,13 @@ $(document).ready(function(){
       );
     });  
   });
+
+function submitForm() {
+  // Get form values
+  let name = document.getElementById("name").value;
+  var project = document.getElementById("project").value;
+  let message = document.getElementById("message").value;
+  
+  var mailtoLink = "mailto:vishalsale802@gmail.com" + "?subject=Message from " + name + " " + "Regarding "+ project + "&body=" + message;
+  window.location.href = mailtoLink;
+}
