@@ -65,6 +65,7 @@ section{
 
 .btn:hover{
     background:var(--yellow);
+    color: rgb(109, 134, 247);
 }
 
 .heading{
@@ -449,4 +450,8 @@ header .navbar ul li a:hover{
     font-weight: bold;
     line-height: 25px;
     line-height: 2;
+}
+s
+.color:active{
+    background-color: lightblue;
 }
