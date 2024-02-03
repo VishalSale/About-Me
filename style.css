@@ -86,7 +86,7 @@ header{
     top:0; 
     left:0;
     z-index: 1000;
-    height: auto;
+    height: 100%;
     width:35rem;
     background: peru;
     display: flex;
@@ -103,7 +103,7 @@ header .user img{
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 1rem;
-    border:.5rem solid #f5f5dc ;
+    border:.5rem solid #f5f5dc;
 }
 
 header .user .name{
