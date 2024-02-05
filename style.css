@@ -38,7 +38,7 @@ html::-webkit-scrollbar-thumb{
 }
 
 body{
-    background:#111;
+    background:#040b14;
     overflow-x: hidden;
     padding-left: 35rem;
 }
@@ -88,7 +88,7 @@ header{
     z-index: 1000;
     height: 100%;
     width:35rem;
-    background: peru;
+    background: #090114;
     align-items: center;
     justify-content: center;
     flex-flow: column;
