@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
 
 :root{
-    --yellow:#f6ff00;
+    --yellow:#e2e037;
 }
 
 *{
@@ -64,7 +64,7 @@ section{
 }
 
 .btn:hover{
-    background:var(--yellow);
+    background-color: #333;
     color: rgb(109, 134, 247);
 }
 
@@ -459,4 +459,31 @@ header .navbar ul li a:hover{
 .justify{
     text-align: justify;
     text-justify: inter-word;
+}
+
+/* project section css */
+.project{
+    margin: 40px;
+    padding: 15px;
+    border-radius: 10%;
+}
+
+.project:hover{
+    background-color: black;
+}
+
+.project:active{
+    background-color: rgb(67, 51, 51);
+}
+
+.shortcut-btn{
+    margin: 50px;
+}
+
+.shortcut-btn:hover{
+    background-color: #222;
+}
+
+.shortcut-btn:active{
+    background-color: #01044f;
 }
