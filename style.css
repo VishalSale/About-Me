@@ -493,3 +493,7 @@ header .navbar ul li a:hover{
     font-size: 20px;
     color: white;
 }
+
+.icon{
+    margin: 0 11px 0 11px;
+}
