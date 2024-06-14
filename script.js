@@ -29,9 +29,9 @@ $(document).ready(function(){
 
 function submitForm() {
   // Get form values
-  let name = document.getElementById("name").value;
-  var project = document.getElementById("project").value;
-  let message = document.getElementById("message").value;
+  let name = document.getElementById("Name").value;
+  let project = document.getElementById("Project").value;
+  let message = document.getElementById("Message").value;
   
   var mailtoLink = "mailto:vishalsale802@gmail.com" + "?subject=Message from " + name + " " + "Regarding "+ project + "&body=" + message;
   window.location.href = mailtoLink;

@@ -488,3 +488,8 @@ header .navbar ul li a:hover{
 .shortcut-btn:active{
     background-color: #01044f;
 }
+
+.contact-names{
+    font-size: 20px;
+    color: white;
+}
