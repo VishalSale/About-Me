@@ -411,3 +411,21 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+//  for contact form sumbit
+document.addEventListener("DOMContentLoaded", function () {
+    const formSubmit = document.getElementById("formSubmit");
+    const Name = document.getElementById("Name");
+    const Project = document.getElementById("Project");
+    const Message = document.getElementById("Message");
+
+    function checkFormData() {
+        formSubmit.disabled = Name.value.trim() === '' || Project.value.trim() === '' || Message.value.trim() === '';
+    }
+
+    Name.addEventListener("input", checkFormData);
+    Project.addEventListener("input", checkFormData);
+    Message.addEventListener("input", checkFormData);
+
+    checkFormData(); // Initial check
+});
