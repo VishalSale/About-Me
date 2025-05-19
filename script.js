@@ -196,7 +196,7 @@ function eraseText(text, i, fnCallback) {
 
 // Start the typewriter effect
 function startTypewriter() {
-    const textArray = ["Web Developer", "Software Developer", "UI/UX Enthusiast", "Problem Solver"];
+    const textArray = ["Full Stack Developer", "MERN Stack Developer"];
     let textArrayIndex = 0;
 
     function typeNextText() {
