@@ -24,7 +24,7 @@ Welcome to my personal portfolio website. I'm **Vishal Sale**, a passionate **Fu
 
 ### 💼 Experience
 
-#### **Top Analytica (June 2024 – Dec 2024)**  
+#### **Top Analytica (June 2024 – May 2025)**  
 **Role:** Full Stack Web Developer  
 **Key Work:**
 - Built a portfolio website for Deepak Aaba Salunkhe using Bootstrap and visual enhancements.
