@@ -21,6 +21,7 @@ Welcome to my personal portfolio website. I'm **Vishal Sale**, a passionate **Fu
 
 ### 📚 Education
 - **B.E. in Information Technology**
+- **Grade CGPA : 8.08**
 
 ### 💼 Experience
 
