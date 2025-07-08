@@ -27,9 +27,9 @@ Welcome to my personal portfolio website. I'm **Vishal Sale**, a passionate **Fu
 #### **Top Analytica (June 2024 – May 2025)**  
 **Role:** Full Stack Web Developer  
 **Key Work:**
-- Built a portfolio website for Deepak Aaba Salunkhe using Bootstrap and visual enhancements.
-- Created a Voter Slip Download website for Kagal (Kolhapur) using PHP, MySQL, HTML, CSS, and JS with search by name/mobile/address/EPIC ID.
-- Developed a portfolio for Jayashree Madan Patil to showcase professional highlights.
+- Built a responsive portfolio website for Deepak Aaba Salunkhe using HTML, CSS, JavaScript, and Bootstrap, with visual enhancements like image flash effects to improve UI/UX.
+- Developed a Voter Management Web Application for Kagal (Kolhapur) using MongoDB, HTML, CSS, and JS. Enabled political party users to log in, manage booth-level voter data (200–300 people per booth), categorize voters using color codes (Red – party supporter, Green – opposition, Grey – neutral, Blue/Yellow – custom), download voter category percentage reports, and group family members under a shared ID.
+- Created a professional portfolio website for Jayashree Madan Patil to highlight achievements, biography, and political/public engagements.
 
 #### **Infosys Springboard (Mar 2024 – Jun 2024)**  
 **Role:** AI Project Intern  
@@ -60,7 +60,7 @@ Welcome to my personal portfolio website. I'm **Vishal Sale**, a passionate **Fu
 | The Art of Visual Storytelling  | AI-based image recognition and automatic narrative generation                           | Python, AI, Hugging Face      |
 | Book Bidding & Reselling        | A web platform for users to bid and resell books                                        | React, Express, MongoDB       |
 | VPad Text Editor                | A custom text editor with a modern UI                                                   | Python, Tkinter               |
-| Voter Slip Download Website     | Search & download slips by name/mobile/address/EPIC ID for Kagal, Kolhapur             | PHP, MySQL, Bootstrap         |
+| Voter Slip Download Website     | Search & download slips by name/mobile/address/EPIC ID for Kagal, Kolhapur             | Htlm, Css, Javascript, Bootstrap, MongoDB       |
 | Temperature Converter           | Convert temperature units easily                                                        | JavaScript                    |
 | Dice Game / Number Guessing     | Fun web games built using JavaScript                                                    | JavaScript                    |
 | Portfolio Websites              | Designed and deployed multiple portfolio sites for individuals                          | HTML, CSS, Bootstrap          |
