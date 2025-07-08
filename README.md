@@ -17,7 +17,7 @@ Welcome to my personal portfolio website. I'm **Vishal Sale**, a passionate **Fu
 ### 👨‍💻 About Me
 - Bachelor of Engineering (Information Technology) graduate from **Savitribai Phule Pune University** with **8.08 CGPA**.
 - Completed AI internship at **Infosys Springboard**, working on projects like *The Art of Visual Storytelling* using **Hugging Face** and **OpenAI models**.
-- Currently working at **Top Analytica** as a Full Stack Web Developer.
+- Worked at **Top Analytica** as a Full Stack Web Developer.
 
 ### 📚 Education
 - **B.E. in Information Technology**
@@ -61,7 +61,7 @@ Welcome to my personal portfolio website. I'm **Vishal Sale**, a passionate **Fu
 | The Art of Visual Storytelling  | AI-based image recognition and automatic narrative generation                           | Python, AI, Hugging Face      |
 | Book Bidding & Reselling        | A web platform for users to bid and resell books                                        | React, Express, MongoDB       |
 | VPad Text Editor                | A custom text editor with a modern UI                                                   | Python, Tkinter               |
-| Voter Slip Download Website     | Search & download slips by name/mobile/address/EPIC ID for Kagal, Kolhapur             | Htlm, Css, Javascript, Bootstrap, MongoDB       |
+| Voter Management Website     | Search & download slips by name/mobile/address/EPIC ID for Kagal, Kolhapur             | Htlm, Css, Javascript, Bootstrap, MongoDB       |
 | Temperature Converter           | Convert temperature units easily                                                        | JavaScript                    |
 | Dice Game / Number Guessing     | Fun web games built using JavaScript                                                    | JavaScript                    |
 | Portfolio Websites              | Designed and deployed multiple portfolio sites for individuals                          | HTML, CSS, Bootstrap          |
