@@ -1,7 +1,8 @@
-// DOM Elements
-const themeToggle = document.getElementById('theme-icon');
+// DOM Elements - will be initialized after DOM loads
+let themeToggle;
+let themeToggleContainer;
+let backToTop;
 const navbar = document.querySelector('.navbar');
-const backToTop = document.querySelector('.back-to-top');
 const skillProgress = document.querySelectorAll('.skill-progress');
 const projectCards = document.querySelectorAll('.project-card');
 const contactForm = document.getElementById('contactForm');
@@ -81,14 +82,6 @@ const projectData = {
         livePreview: 'https://deepakaaba.com/',
         github: '#'
     },
-    voterSlip: {
-        title: 'Voter Slip Download Website',
-        description: 'A website to download voter slips.',
-        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSp_1ntLuNx2yd5gDQ19yvSUNO_zqWsqT4kwg&s',
-        technologies: ['Web Development', 'Government Services'],
-        livePreview: 'https://voter.topanalytica.in/',
-        github: '#'
-    },
     portfolioJayashree: {
         title: 'Portfolio (Jayashree Madan Patil)',
         description: 'A portfolio website for Jayashree Madan Patil.',
@@ -99,24 +92,61 @@ const projectData = {
     }
 }
 
-// Theme Toggle
-themeToggle.addEventListener('click', () => {
-    document.body.classList.toggle('dark-theme');
-    if (document.body.classList.contains('dark-theme')) {
-        themeToggle.classList.replace('fa-moon', 'fa-sun');
-        localStorage.setItem('theme', 'dark');
+// Initialize theme toggle when DOM is loaded
+document.addEventListener('DOMContentLoaded', () => {
+    // Initialize theme toggle elements
+    themeToggle = document.getElementById('theme-icon');
+    themeToggleContainer = document.querySelector('.theme-toggle');
+    backToTop = document.querySelector('.back-to-top');
+    
+    // Check if elements exist before adding event listeners
+    if (themeToggle && themeToggleContainer) {
+        // Theme Toggle
+        const toggleTheme = () => {
+            document.body.classList.toggle('dark-theme');
+            if (document.body.classList.contains('dark-theme')) {
+                themeToggle.classList.replace('fa-moon', 'fa-sun');
+                localStorage.setItem('theme', 'dark');
+            } else {
+                themeToggle.classList.replace('fa-sun', 'fa-moon');
+                localStorage.setItem('theme', 'light');
+            }
+        };
+
+        themeToggle.addEventListener('click', toggleTheme);
+        themeToggleContainer.addEventListener('click', toggleTheme);
+
+        // Handle keyboard navigation for theme toggle
+        themeToggleContainer.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                toggleTheme();
+            }
+        });
+
+        // Check for saved theme preference
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') {
+            document.body.classList.add('dark-theme');
+            themeToggle.classList.replace('fa-moon', 'fa-sun');
+        }
     } else {
-        themeToggle.classList.replace('fa-sun', 'fa-moon');
-        localStorage.setItem('theme', 'light');
+        console.error('Theme toggle elements not found');
+    }
+
+    // Initialize Back to Top Button
+    if (backToTop) {
+        backToTop.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    } else {
+        console.error('Back to top button not found');
     }
 });
-
-// Check for saved theme preference
-const savedTheme = localStorage.getItem('theme');
-if (savedTheme === 'dark') {
-    document.body.classList.add('dark-theme');
-    themeToggle.classList.replace('fa-moon', 'fa-sun');
-}
 
 // Navbar Scroll Effect
 window.addEventListener('scroll', () => {
@@ -126,11 +156,13 @@ window.addEventListener('scroll', () => {
         navbar.classList.remove('scrolled');
     }
 
-    // Back to Top Button
-    if (window.scrollY > 300) {
-        backToTop.classList.add('active');
-    } else {
-        backToTop.classList.remove('active');
+    // Back to Top Button - only if element exists
+    if (backToTop) {
+        if (window.scrollY > 300) {
+            backToTop.classList.add('active');
+        } else {
+            backToTop.classList.remove('active');
+        }
     }
 
     // Animate skill bars on scroll
@@ -152,15 +184,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 behavior: 'smooth'
             });
         }
-    });
-});
-
-// Back to Top Button Click
-backToTop.addEventListener('click', (e) => {
-    e.preventDefault();
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
     });
 });
 
